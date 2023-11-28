@@ -10,5 +10,5 @@ services:
     volumes:
       - /app/app_vol:/root/.aspnet/DataProtection-Keys
     ports:
-        - 6080:80
-        - 6443:443
+        - 8080:80
+        - 8443:443
