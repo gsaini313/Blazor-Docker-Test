@@ -2,11 +2,13 @@
 version: '3.4'
 
 services:
-  blazorhosted:
+  Blazor-Docker-Test:
     image: Blazor-Docker-Test
     build:
       context: .
-      dockerfile: Server/Dockerfile
+      dockerfile: Blazor-Docker-Test/Server/Dockerfile
+    volumes:
+      - /app/app_vol:/root/.aspnet/DataProtection-Keys
     ports:
         - 6080:80
         - 6443:443
